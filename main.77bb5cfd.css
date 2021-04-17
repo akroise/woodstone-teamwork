@@ -1405,9 +1405,21 @@
     display: none !important;
   }
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: auto;
+  background-color: black;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 40em) {
+  body {
+    display: grid;
+  }
 }
 
 p {
