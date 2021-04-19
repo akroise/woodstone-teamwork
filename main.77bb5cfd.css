@@ -259,6 +259,82 @@
   padding: 1.6em;
   font-size: 1.1em;
 }
+.section2 .visiting-card {
+  color: black;
+  width: 50%;
+  position: absolute;
+}
+.section2 .visiting-card::before {
+  content: "";
+  display: none;
+}
+.section2 .visiting-card:hover {
+  display: block;
+}
+.section2 .visiting-card:hover::before {
+  background-color: white;
+}
+
+footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  max-width: 1080px;
+  white-space: nowrap;
+  grid-gap: 16px;
+  justify-content: center;
+}
+@media (max-width: 40em) {
+  footer {
+    display: subgrid;
+    grid-row-gap: 1px;
+    grid-column-gap: 9px;
+  }
+}
+footer a {
+  color: black;
+  cursor: pointer;
+  text-align: right;
+}
+footer a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0em;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  color: #77392c;
+}
+footer a:hover::before {
+  background-color: #f1f3f2;
+}
+footer k {
+  padding-left: 2.3rem;
+  color: #f1f3f2;
+  font-size: 0.8rem;
+}
+footer p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+}
+footer code {
+  color: #e8e9e8;
+}
+footer .address {
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: left;
+}
+footer .contact {
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: left;
+}
 
 .row {
   box-sizing: border-box;
