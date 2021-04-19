@@ -314,9 +314,14 @@ footer a:hover::before {
   background-color: #f1f3f2;
 }
 footer k {
-  padding-left: 2.3rem;
-  color: #f1f3f2;
-  font-size: 0.8rem;
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 0;
+  color: #e8e9e8;
+  font-size: 0.7rem;
+  text-align: right;
+}
+footer k:hover {
+  color: gainsboro;
 }
 footer p {
   font-size: 0.9rem;
@@ -325,15 +330,16 @@ footer p {
 footer code {
   color: #e8e9e8;
 }
+footer code:hover {
+  color: gainsboro;
+}
 footer .address {
   padding-left: 10px;
   padding-right: 20px;
   text-align: left;
 }
 footer .contact {
-  padding-left: 10px;
-  padding-right: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .row {
