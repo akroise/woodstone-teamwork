@@ -113,11 +113,12 @@
 }
 @media (max-width: 40em) {
   .scrolling-wrapper {
+    width: 100vw;
     display: block;
-    padding: 0rem;
-    margin-left: -20px;
+    padding: 2rem;
+    margin-left: -5px;
     margin-right: 0;
-    padding-left: 30px;
+    padding-left: 5px;
     padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -219,13 +220,17 @@
 }
 
 .section1 {
+  width: auto;
   background-color: #e8e9e8;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
+@media (max-width: 40em) {
+  .section1 {
+    width: 100vw;
+  }
+}
 .section1__data {
-  margin: 0;
   padding: 0;
   color: #e8e9e8;
   margin-left: auto;
@@ -247,15 +252,22 @@
 }
 @media (max-width: 40em) {
   .section1__data .dim {
-    padding-left: 0.9rem;
+    padding-left: 0rem;
+    width: 100%;
   }
 }
 
 .section2 {
+  width: auto;
   max-height: 700px;
   height: 100%;
   background-color: #5e5840;
   padding: 0px;
+}
+@media (max-width: 40em) {
+  .section2 {
+    width: 100vw;
+  }
 }
 .section2__data {
   color: #e8e9e8;
@@ -285,9 +297,15 @@
 }
 
 .section3 {
+  width: auto;
   max-height: 700px;
   height: 100%;
   padding: 0px;
+}
+@media (max-width: 40em) {
+  .section3 {
+    width: 100vw;
+  }
 }
 .section3__data {
   color: #e8e9e8;
@@ -302,9 +320,9 @@
 }
 
 .contacts {
+  width: auto;
   max-height: 700px;
   max-width: 1080px;
-  width: 100%;
   height: 21.5rem;
   background-color: #77392c;
   padding-right: 0px;
@@ -312,6 +330,11 @@
   grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 40em) {
+  .contacts {
+    width: 100vw;
+  }
 }
 @media (max-width: 45em) {
   .contacts {
@@ -459,14 +482,14 @@
   font-size: 0.8em;
 }
 .contacts__wa {
-  padding: 2rem;
+  padding: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
 }
@@ -478,9 +501,9 @@
 }
 @media (max-width: 40em) {
   .contacts__wa {
-    margin: 1rem;
-    padding-top: 8rem;
-    height: 20rem;
+    margin: 0rem;
+    padding: 0rem;
+    height: 18rem;
   }
 }
 .contacts__wa .textbox {
@@ -503,7 +526,7 @@
 @media (max-width: 40em) {
   .contacts__wa .textbox {
     padding-left: 1rem;
-    width: 23rem;
+    width: 20rem;
     height: 13.5rem;
   }
 }
@@ -535,7 +558,7 @@
 }
 @media (max-width: 40em) {
   .contacts__wa .textbox button {
-    margin-left: 15rem;
+    margin-left: 12rem;
   }
 }
 .contacts__wa .textarea {
@@ -590,23 +613,34 @@
 }
 
 footer {
+  width: auto;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
   text-align: left;
-  justify-content: space-evenly;
   align-items: flex-start;
   max-width: 1080px;
   white-space: nowrap;
-  grid-gap: 16px;
+  grid-gap: 2px;
   justify-content: center;
 }
 @media (max-width: 40em) {
   footer {
+    width: 100vw;
+  }
+}
+@media (min-width: 45em) {
+  footer {
+    padding: 0rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 40em) {
+  footer {
     display: subgrid;
-    grid-row-gap: 1px;
-    grid-column-gap: 9px;
+    grid-row-gap: 0px;
+    grid-column-gap: 3px;
   }
 }
 footer a {
@@ -648,12 +682,16 @@ footer code:hover {
   color: gainsboro;
 }
 footer .address {
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 20px;
   text-align: left;
 }
 footer .contact {
   text-align: center;
+}
+footer .map {
+  margin: 0;
+  padding: 0;
 }
 
 .good {
@@ -1795,6 +1833,7 @@ footer .contact {
 * {
   box-sizing: border-box;
   position: relative;
+  outline: 1px solid red;
 }
 
 html {
@@ -1805,7 +1844,6 @@ body {
   background-color: #191825;
   margin: 0;
   padding: 0;
-  width: 100%;
   height: auto;
   display: grid;
   font-family: "Poppins", sans-serif;
@@ -1903,7 +1941,7 @@ button,
   .banner {
     padding-top: 30px;
     width: 80%;
-    margin: auto;
+    margin: 0;
   }
 }
 @media (min-width: 45em) {
